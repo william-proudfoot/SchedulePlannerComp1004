@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Schedule Planner">
+        <meta name="author" content="Billy Proudfoot">
+        <meta name="theme-color" content="#ffffff">
+        <title>Schedule Planner</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="FileSaver.js"></script>
+    </head>
+    <body>
+            <h1>Schedule Planner</h1>
+        <section class="fileLoader">
+            <p>Choose the schedule file you would like to open:</p>
+            <div class="input-container">
+                <label for="fileInput">Enter JSON file path:</label>
+                <input type="text" id="fileInput" class="file-path" title="Please enter a valid file name (e.g. schedule.json)">
+                <button id="loadJsonButton" class="btn load">Load JSON File</button>
+		<script src="input.js"></script>
+            </div>
+        </section>
+        <section class="schedule">
+            <table class="schedule-table" border="1">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                       		<tr>
+        				<th>9:00</th>
+        				<td data-day="Monday" data-time="9:00"></td>
+    					<td data-day="Tuesday" data-time="9:00"></td>
+        				<td data-day="Wednesday" data-time="9:00"></td>
+        				<td data-day="Thursday" data-time="9:00"></td>
+        				<td data-day="Friday" data-time="9:00"></td>
+        				<td data-day="Saturday" data-time="9:00"></td>
+        				<td data-day="Sunday" data-time="9:00"></td>
+    				</tr>
+				<tr>
+    					<th>10:00</th>
+    					<td data-day="Monday" data-time="10:00"></td>
+    					<td data-day="Tuesday" data-time="10:00"></td>
+    					<td data-day="Wednesday" data-time="10:00"></td>
+    					<td data-day="Thursday" data-time="10:00"></td>
+	    				<td data-day="Friday" data-time="10:00"></td>
+    					<td data-day="Saturday" data-time="10:00"></td>
+    					<td data-day="Sunday" data-time="10:00"></td>
+				</tr>
+				<tr>
+    					<th>11:00</th>
+    					<td data-day="Monday" data-time="11:00"></td>
+    					<td data-day="Tuesday" data-time="11:00"></td>
+    					<td data-day="Wednesday" data-time="11:00"></td>
+    					<td data-day="Thursday" data-time="11:00"></td>
+    					<td data-day="Friday" data-time="11:00"></td>
+    					<td data-day="Saturday" data-time="11:00"></td>
+    					<td data-day="Sunday" data-time="11:00"></td>
+				</tr>
+				<tr>
+    					<th>12:00</th>
+    					<td data-day="Monday" data-time="12:00"></td>
+    					<td data-day="Tuesday" data-time="12:00"></td>
+    					<td data-day="Wednesday" data-time="12:00"></td>
+    					<td data-day="Thursday" data-time="12:00"></td>
+    					<td data-day="Friday" data-time="12:00"></td>
+    					<td data-day="Saturday" data-time="12:00"></td>
+    					<td data-day="Sunday" data-time="12:00"></td>
+				</tr>
+				<tr>
+    					<th>1:00</th>
+    					<td data-day="Monday" data-time="1:00"></td>
+    					<td data-day="Tuesday" data-time="1:00"></td>
+    					<td data-day="Wednesday" data-time="1:00"></td>
+    					<td data-day="Thursday" data-time="1:00"></td>
+    					<td data-day="Friday" data-time="1:00"></td>
+    					<td data-day="Saturday" data-time="1:00"></td>
+    					<td data-day="Sunday" data-time="1:00"></td>
+				</tr>
+				<tr>
+    					<th>2:00</th>
+    					<td data-day="Monday" data-time="2:00"></td>
+    					<td data-day="Tuesday" data-time="2:00"></td>
+    					<td data-day="Wednesday" data-time="2:00"></td>
+    					<td data-day="Thursday" data-time="2:00"></td>
+    					<td data-day="Friday" data-time="2:00"></td>
+    					<td data-day="Saturday" data-time="2:00"></td>
+    					<td data-day="Sunday" data-time="2:00"></td>
+				</tr>
+				<tr>
+					<th>3:00</th>
+    					<td data-day="Monday" data-time="3:00"></td>
+    					<td data-day="Tuesday" data-time="3:00"></td>
+    					<td data-day="Wednesday" data-time="3:00"></td>
+    					<td data-day="Thursday" data-time="3:00"></td>
+    					<td data-day="Friday" data-time="3:00"></td>
+    					<td data-day="Saturday" data-time="3:00"></td>
+    					<td data-day="Sunday" data-time="3:00"></td>
+				</tr>
+				<tr>
+					<th>4:00</th>
+    					<td data-day="Monday" data-time="4:00"></td>
+    					<td data-day="Tuesday" data-time="4:00"></td>
+    					<td data-day="Wednesday" data-time="4:00"></td>
+    					<td data-day="Thursday" data-time="4:00"></td>
+    					<td data-day="Friday" data-time="4:00"></td>
+    					<td data-day="Saturday" data-time="4:00"></td>
+    					<td data-day="Sunday" data-time="4:00"></td>
+				</tr>
+				<tr>
+					<th>5:00</th>
+    					<td data-day="Monday" data-time="5:00"></td>
+    					<td data-day="Tuesday" data-time="5:00"></td>
+    					<td data-day="Wednesday" data-time="5:00"></td>
+    					<td data-day="Thursday" data-time="5:00"></td>
+    					<td data-day="Friday" data-time="5:00"></td>
+    					<td data-day="Saturday" data-time="5:00"></td>
+    					<td data-day="Sunday" data-time="5:00"></td>
+				</tr>
+				<tr>
+					<th>6:00</th>
+    					<td data-day="Monday" data-time="6:00"></td>
+    					<td data-day="Tuesday" data-time="6:00"></td>
+    					<td data-day="Wednesday" data-time="6:00"></td>
+    					<td data-day="Thursday" data-time="6:00"></td>
+    					<td data-day="Friday" data-time="6:00"></td>
+    					<td data-day="Saturday" data-time="6:00"></td>
+    					<td data-day="Sunday" data-time="6:00"></td>
+				</tr>
+				<tr>
+					<th>7:00</th>
+    					<td data-day="Monday" data-time="7:00"></td>
+    					<td data-day="Tuesday" data-time="7:00"></td>
+    					<td data-day="Wednesday" data-time="7:00"></td>
+    					<td data-day="Thursday" data-time="7:00"></td>
+    					<td data-day="Friday" data-time="7:00"></td>
+    					<td data-day="Saturday" data-time="7:00"></td>
+    					<td data-day="Sunday" data-time="7:00"></td>
+				</tr>
+				<tr>
+					<th>8:00</th>
+    					<td data-day="Monday" data-time="8:00"></td>
+    					<td data-day="Tuesday" data-time="8:00"></td>
+    					<td data-day="Wednesday" data-time="8:00"></td>
+    					<td data-day="Thursday" data-time="8:00"></td>
+    					<td data-day="Friday" data-time="8:00"></td>
+    					<td data-day="Saturday" data-time="8:00"></td>
+    					<td data-day="Sunday" data-time="8:00"></td>
+				</tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="activity-management">
+            <p>Add an entry to the schedule:</p>
+            <div class="input-container">
+                <label for="dayInput">Day:</label>
+                <input type="text" id="dayInput" class="day-input" pattern="Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday" title="Please enter a valid day of the week (e.g. Monday).">
+                <label for="timeInput">Time:</label>
+                <input type="text" id="timeInput" class="time-input" pattern="(?:[0-9]|1[0-9]):[0-5][0-9]" title="Please enter a valid time (e.g. 9:00).">
+                <label for="activityInput">Activity Type:</label>
+                <input type="text" id="activityInput" class="activity-input" title="Please enter what you wish the activity to be named.">
+                <button id="addActivityButton" class="btn add">Add Activity</button>
+                <button id="removeActivityButton" class="btn remove">Remove Activity</button>
+            </div>
+        </section>
+        <section class="data-storage">
+            <p>To save the table as it currently is, type a file name below and press the button to download it:</p>
+            <div class="input-container">
+                <label for="fileOutput">Enter JSON file path:</label>
+                <input type="text" id="fileOutput" class="file-path" title="Please enter what you wish the file to be named.">
+                <button id="saveJsonButton" class="btn save">Save to JSON File</button>
+        	<script src="output.js"></script>
+            </div>
+        </section>
+        <script src="newData.js"></script>
+        <script src="currentTime.js"></script>
+    </body>
+</html>

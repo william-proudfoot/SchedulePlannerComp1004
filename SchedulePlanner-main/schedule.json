@@ -1,0 +1,19 @@
+{
+  "activities": [
+    {
+      "Day": "Monday",
+      "Time": "9:00",
+      "Type": "gym"
+    },
+    {
+      "Day": "Monday",
+      "Time": "10:00",
+      "Type": "Gym"
+    },
+    {
+      "Day": "Tuesday",
+      "Time": "11:00",
+      "Type": "work"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+table {
+            			width: 100%;
+            			border-collapse: collapse;
+        		}
+        		th, td {
+            			padding: 8px;
+            			text-align: left;
+        		}
+        		th {
+            			background-color: #cad5ed;
+        		}
+        		tr:nth-child(even) {
+            			background-color: #cad5ed;
+        		}
+        		@media only screen and (max-width: 600px) {
+            			th, td {
+                			padding: 4px;
+            			}
+            			th {
+                			font-size: 12px;
+            			}
+            			td {
+                			font-size: 14px;
+            			}
+        		}
+			.input-container {
+    				display: flex;
+    				flex-wrap: wrap;
+			}
+			.input-container label,
+			.input-container input,
+			.input-container button {
+    				margin-right: 10px;
+    				margin-bottom: 10px; 
+			}
+			@media only screen and (max-width: 600px) {
+    				.input-container {
+        				flex-direction: column;
+    				}
+			}
